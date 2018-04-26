@@ -1,1 +1,4 @@
 # ImagE_denoising_NLM
+
+The non-local mean denoising algorithm is actually very simple. The denoising method is similar to the Gaussian denoising and bilateral filter denoising. Both use some criteria to estimate the true value of the pixel through the “around” pixel weights.
+NLM has the  the characteristics of Gauss filtering, which is to use the degree of similarity of the image pixels to estimate the weight, and the also the algorithm indicates that the bilateral filter considers the similarity of the values of the pixels themselves, and also considers the similar pixels and be The distance of the estimated pixel points will have a higher weight if they are closer to the estimated pixel point. The non-local mean value is to search for a similar image block in a window for weight distribution and the center point in the most similar pixel blocks is combined to estimate the true value in a weighted form.
